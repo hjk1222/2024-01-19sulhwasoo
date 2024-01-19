@@ -1,0 +1,10 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("slick.css");
+@import url("font.css");
+@import url("fontello.css");
+@import url("layout.css"); /* 기본형pc */
+@import url("media.css"); /* 반응형 */
+/* html 문서에 link 길어지는게 싫으니까 css문서 여기에 임포트 시킴 */
+
+

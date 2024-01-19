@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse3</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        body{
+            /* background-color: gray; */
+        }
+        .box{
+            width: 300px;
+            height: 350px;
+            border: 1px solid rgb(255, 0, 0);
+            
+            margin: 0 20px ;
+            float: left;
+            background-size: cover;
+            background-position: center center;
+            /* background-position: 그림이 시작하는 위치에 대한 값 */
+            /* background-position: center center; */            
+            background-repeat: no-repeat;
+            position: relative;
+
+
+            cursor: url("img/icons8-search-50.png"),auto;
+            /* 내가 그린 그림이나 png 파일로 마우스 커서 바꾸기 가능함*/
+            /* 마우스커버모양 변경 여기에 */
+            /* [,auto]를 붙여줘야 나머지 영역에 대한 마우스 커서 상태 효과 줄 수 있음 */            
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+
+
+
+
+        .box1{
+            background-image: url("img/20200728_final_PERFECT_main_highlight_banner_pc.jpg");
+            /* 백그라운드이미지로 뜯어야함 */
+            /* 아래쪽이 기준임 */
+            /* 백그라운드는 다 적용시키는 아이라서 위에 포지션을 인식을 할 수가 없음*/
+        }
+        .box2{  
+            background-image: url("img/20200728_final_main_highlight_banner_pc_02.jpg");
+        }
+        .box3{
+            background-image: url("img/20200727_final_Highlight-Banner_Beautiful_pc.jpg");
+        }
+
+        .circle{
+            width: 1000px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,1);
+            position:absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 30px;
+            transition: all 0.5s;
+        }        
+        .circle .p1{
+            margin-bottom: 10px;
+        }
+
+        .box1:hover{
+            background-position: center -50px;
+        }
+        .box2:hover{
+            background-position: center -50px;
+        }
+        .box3:hover{
+            background-position: center -50px;
+        }
+        .box:hover .circle{
+            top: 70%;
+        }
+        
+
+
+
+
+        
+            
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <div class="circle">
+            <p class="p1">@12345</p>
+            <p class="p2">Lorem ipsum dolor, <br> sit amet consectetur </p>
+        </div>
+    </div> <!-- box1 -->
+    <div class="box box2">
+        <div class="circle">
+            <p class="p1">@12345</p>
+            <p class="p2">Lorem ipsum dolor, <br> sit amet consectetur </p>
+        </div>
+    </div> <!-- box2 -->
+    <div class="box box3">
+        <div class="circle">
+            <p class="p1">@12345</p>
+            <p class="p2">Lorem ipsum dolor, <br> sit amet consectetur </p>
+        </div>
+    </div> <!-- box3 -->
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+#wrap{}
+
+/* 헤더영역 */
+#header{
+    background-color: #fff;
+}
+.header_inner{
+    /* header-inner값 1100px */
+    width: 100%;
+    /* 1100px 이상일 때는 100% 적용 */
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.select_language{
+        /* 여기: 모바일반응형에선 사라질 부분 */
+    /* border: 1px solid salmon; */
+    width: 25%;
+    text-align: left;
+    font-size:1.1em;
+    position: relative;
+    padding: 12px;
+}
+.select_language .t_lang{
+    font-size: 12px;
+}
+.select_language .t_lang i{
+    /* 아이콘 겹쳐줄거임 */
+    position: absolute;
+    top:20px;
+    left: 80px;
+}
+
+.select_language .t_lang i.icon-angle-up{
+    opacity: 0;
+    /* 안보이게 */
+}
+.select_language.show .t_lang i.icon-angle-up{
+    opacity: 1;
+    /* add클래스 주면 오파시티 줄거임 */
+}
+.select_language .t_lang i.icon-angle-down{}
+.select_language.show .t_lang i.icon-angle-down{
+    opacity: 0;
+}
+.select_language.show .select_lang_list{
+    visibility: visible;
+    /* display: block; */
+}
+
+
+.select_lang_list{
+    width: 80%;
+    border: 1px solid #222;
+    background-color: #fff;
+    padding: 12px ;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    top: 40px;
+    visibility: hidden;
+    /* display: none; */
+    z-index: 100;
+    /* [제트1] 슬라이드이미지랑 겹치니까 */
+}
+.select_lang_list li{}
+.select_lang_list li a{
+    display: block;
+    font-size: 12px;
+    padding: 5px 3px;
+    /* text-transform: uppercase; 폰트 대문자로 바꿔주기*/
+}
+
+
+/* 로고 영역 */
+.logo{
+    /* border: 1px solid red; */
+    align-self: center;
+    /* start end center */
+}
+.logo a{}
+.logo a img{
+    width: 165px;
+}
+
+.header_link{
+    width: 25%;
+    padding-top: 12px;
+    text-align: right;
+    /* border: 1px solid red; */
+}
+.header_link a{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 12px;
+}
+.header_link a.h_search{
+    font-size: 14px;
+}
+
+
+/* 네비 영역 */
+.nav{}
+.nav_inner{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gnb_menu{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    position: relative;
+}
+.gnb_menu > li{
+    padding: 5px 20px;
+}
+.gnb_menu > li > a{
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+
+
+.sub{
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #ddd;
+    /* display: none; */
+    /* 플렉스가 우선이라서... 스크립트에서 해야함 */
+}
+.sub li{
+    padding: 8px 20px;
+}
+.sub li a{
+    display: block;
+    font-size: 13px;
+    color: #777;
+}
+
+.sub.sub2{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    position: absolute;
+    left: 0;
+    top:30px;
+}
+
+.sub.sub3{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    position: absolute;
+    left: 0;
+    top:30px;
+}
+.sub.sub4{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    position: absolute;
+    left: 0;
+    top:30px;
+}
+.sub.sub5{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    position: absolute;
+    left: 0;
+    top:30px;
+}
+
+
+
+
+
+

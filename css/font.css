@@ -1,5 +1,21 @@
 @charset "utf-8";
 
+/* 다운받은 글꼴을 내가 직접 폰트페이스를 만든 곳 */
+/* 내가 돈주고 폰트를 구매했던지 하는 다운로드 폰트를 쓸 상황에서의 방법! */
+
+/* 폰트를 다운받는다 */
+/* 폰트 폴더에 다운로드 한 폰트를 폴더로 자체로 넣어준다 */
+/* 서버에 폰트 까지 다 같이 올려야함 참고 */
+/* @font-face{
+    font-family: "내가지정할폰트이름써주기";
+    src:url("폰트경로 그대로 입력해주기")
+} */
+/* html문서 body css에   font-family: "내가지정할폰트이름써주기"; 적용시켜주기! */   
+
+
+
+
+
 @font-face{
     font-family:"Arita-buriHL" ;
     src: url("../font/Arita-buriHL.otf");    
