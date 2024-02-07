@@ -16,6 +16,16 @@ $(function(){
         $(".gnb_menu").stop().animate({height:"50px"},500)
     })//menu hover
 
+    
+    //이미지 슬라이드 영역 slick
+    $(".visual_wrap").slick({
+        autoplay:true,
+        autoplaySpeed: 3000,
+        dots:true,
+        arrow: true
+    })
+
+
 
 
 

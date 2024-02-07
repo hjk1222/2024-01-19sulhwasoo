@@ -6,5 +6,6 @@
 @import url("layout.css"); /* 기본형pc */
 @import url("media.css"); /* 반응형 */
 /* html 문서에 link 길어지는게 싫으니까 css문서 여기에 임포트 시킴 */
+/* 여러 개의 css 임포트로! */
 
 
